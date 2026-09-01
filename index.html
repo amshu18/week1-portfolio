@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Responsive Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h1>About Me</h1>
+      <p>Hello! I am a web developer learning full-stack development with the MERN stack.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <p>B.Tech in Computer Science / Information Technology</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal website built with HTML, CSS, and JS.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your Email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formError" class="error-msg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
